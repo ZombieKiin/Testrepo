@@ -14,8 +14,7 @@ import java.util.List;
 
 public class HelloApplication {
   public static void main(String[] args) {
-    try { //This text has been replaced 2
-    //  FileInputStream file = new FileInputStream("data.txt");
+    try { //  FileInputStream file = new FileInputStream("data.txt");
     //  FileChannel channel = file.getChannel();
       Path dataPath = FileSystems.getDefault().getPath("data.txt");
       Files.write(dataPath, "\nLine 5".getBytes("UTF-8"), StandardOpenOption.APPEND);
