@@ -14,7 +14,7 @@ import java.util.List;
 
 public class HelloApplication {
   public static void main(String[] args) {
-    try { //And here is where I will change things to test Git again.
+    try { //This text has been replaced 2
     //  FileInputStream file = new FileInputStream("data.txt");
     //  FileChannel channel = file.getChannel();
       Path dataPath = FileSystems.getDefault().getPath("data.txt");
