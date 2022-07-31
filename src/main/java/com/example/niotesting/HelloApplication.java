@@ -14,9 +14,9 @@ import java.util.List;
 
 public class HelloApplication {
   public static void main(String[] args) {
-    try {
-//      FileInputStream file = new FileInputStream("data.txt");
-//      FileChannel channel = file.getChannel();
+    try { //And here is where I will change things to test Git again.
+    //  FileInputStream file = new FileInputStream("data.txt");
+    //  FileChannel channel = file.getChannel();
       Path dataPath = FileSystems.getDefault().getPath("data.txt");
       Files.write(dataPath, "\nLine 5".getBytes("UTF-8"), StandardOpenOption.APPEND);
       List<String> lines = Files.readAllLines(dataPath);
@@ -25,6 +25,7 @@ public class HelloApplication {
       }
   } catch(IOException e) {
       e.printStackTrace();
+      System.out.println(e.getStackTrace());
     }
 
   }
