@@ -1,20 +1,12 @@
 package com.example.niotesting;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.channels.FileChannel;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 import java.util.List;
 
 public class HelloApplication {
   public static void main(String[] args) {
-    try { //This text has been replaced 2
+    try { 
     //  FileInputStream file = new FileInputStream("data.txt");
     //  FileChannel channel = file.getChannel();
       Path dataPath = FileSystems.getDefault().getPath("data.txt");
